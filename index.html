@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trazo Oculto | Arte a cielo abierto en Colegiales, del 14 al 17 de noviembre</title>
+  <meta name="description" content="Trazo Oculto: galería a cielo abierto en las medianeras de Colegiales. Murales en vivo, talleres y charlas del 14 al 17 de noviembre.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Íconos del cronograma -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="ico-video" viewBox="0 0 24 24"><rect x="1.5" y="6" width="14" height="12" rx="2.5"/><path d="M16.5 10.2 22.5 7v10l-6-3.2z"/></symbol>
+    <symbol id="ico-kids" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2.5"/><path d="M3 21v-7l-1.5-3 2-1.5h7l2 1.5-1.5 3v7H8.5v-4.5h-2V21z"/><circle cx="17.5" cy="9" r="2"/><path d="M14.5 21v-5l-1-2 1.5-1h5l1.5 1-1 2v5h-1.8v-3.5h-1.4V21z"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <nav aria-label="Principal">
+      <a href="#cronograma">CRONOGRAMA</a>
+      <a href="#invitados">INVITADOS</a>
+      <a href="#merch">MERCH</a>
+      <button class="btn btn-nav" type="button">ENTRADAS</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="hero-in">
+        <img class="d d-fondo" src="img/fondo-estrella.png" alt="">
+        <img class="d d-rosa" src="img/estrella-rosa.png" alt="">
+        <img class="d d-azul" src="img/estrella-azul.png" alt="">
+        <img class="d d-azul-g" src="img/estrella-azul-grande.png" alt="">
+        <img class="d d-sol" src="img/miscelanea-roja.png" alt="">
+        <img class="d d-rodillo" src="img/rodillo-rosa.png" alt="">
+
+        <h1 class="logo"><img src="img/logo.png" alt="Trazo Oculto"></h1>
+        <button class="btn btn-azul hero-btn" type="button">ENTRADAS</button>
+        <p class="tagline">
+          <span class="tag-1">ARTE A CIELO ABIERTO <span class="tag-reg">en colegiales</span></span>
+          <span class="tag-2">del 14 al 17 de noviembre</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- PROGRAMA -->
+    <section class="crono-sec wrap" id="cronograma">
+      <h2 class="titulo">¿de qué se trata?</h2>
+      <p class="intro">Una galería a cielo abierto: durante cuatro días las medianeras de Colegiales se convierten en lienzos de gran formato. Elegí el día y mirá qué pasa en cada esquina.</p>
+
+      <div class="dias" role="tablist" aria-label="Elegí el día">
+        <button role="tab" type="button" data-dia="0" aria-selected="true">día 1</button>
+        <button role="tab" type="button" data-dia="1" aria-selected="false">día 2</button>
+        <button role="tab" type="button" data-dia="2" aria-selected="false">día 3</button>
+        <button role="tab" type="button" data-dia="3" aria-selected="false">día 4</button>
+      </div>
+
+      <div class="dia" id="dia" role="tabpanel" aria-live="polite">
+        <h3 class="dia-num">día <b id="dia-n">1</b> <span id="dia-fecha">sábado 14</span></h3>
+        <p class="dia-sub" id="dia-sub">el barrio se convierte en galería</p>
+        <div class="crono" id="crono"></div>
+        <ul class="leyenda">
+          <li><svg class="ico"><use href="#ico-video"/></svg> Se transmite por YouTube</li>
+          <li><svg class="ico"><use href="#ico-kids"/></svg> Ideal para chicos</li>
+          <li><span class="sw sw-azul"></span> Invitados especiales</li>
+          <li><span class="sw sw-rojo"></span> Actividad destacada</li>
+        </ul>
+      </div>
+      <img class="d balde" src="img/balde.png" alt="">
+    </section>
+
+    <!-- INVITADOS -->
+    <section class="wrap" id="invitados">
+      <h2 class="titulo">¿quiénes van a estar?</h2>
+      <div class="invitados">
+        <article class="card">
+          <h3>MARTÍN RON</h3><p>Charla de arte urbano</p>
+          <div class="persona"><i class="estrella"></i><img src="img/martin-ron.png" alt="Martín Ron"></div>
+        </article>
+        <article class="card">
+          <h3>MURALISTAS ARG</h3><p>Charla Irene Lasivita y Dana Alessi</p>
+          <div class="persona"><i class="estrella"></i><img src="img/muralistas-arg.png" alt="Irene Lasivita y Dana Alessi"></div>
+        </article>
+        <article class="card">
+          <h3>CÍCLOPE</h3><p>Charla con Pilar Tolosa y Julián Razquin</p>
+          <div class="persona"><i class="estrella"></i><img src="img/ciclope.png" alt="Pilar Tolosa y Julián Razquin"></div>
+        </article>
+        <article class="card">
+          <h3>PILAR DIBUJITO</h3><p>Charla de ilustración e historia argentina</p>
+          <div class="persona"><i class="estrella"></i><img src="img/pilar-dibujito.png" alt="Pilar Dibujito"></div>
+        </article>
+      </div>
+      <div class="centro"><button class="btn btn-azul" type="button">ENTRADAS</button></div>
+    </section>
+
+    <!-- MERCH -->
+    <section class="wrap" id="merch">
+      <h2 class="titulo">llevate un recuerdo!</h2>
+      <div class="carrusel">
+        <div class="pista" id="pista" tabindex="0" aria-label="Productos de merch">
+          <figure class="item"><div class="ph"><img src="img/merch-1.jpg" alt="Merch Trazo Oculto 1"></div></figure>
+          <figure class="item"><div class="ph"><img src="img/merch-2.jpg" alt="Merch Trazo Oculto 2"></div></figure>
+          <figure class="item"><div class="ph"><img src="img/merch-3.jpg" alt="Merch Trazo Oculto 3"></div></figure>
+          <figure class="item"><div class="ph"><img src="img/merch-4.jpg" alt="Merch Trazo Oculto 4"></div></figure>
+          <figure class="item"><div class="ph"><img src="img/merch-5.jpg" alt="Merch Trazo Oculto 5"></div></figure>
+          <figure class="item"><div class="ph"><img src="img/merch-6.jpg" alt="Merch Trazo Oculto 6"></div></figure>
+        </div>
+        <div class="flechas">
+          <button type="button" id="prev" aria-label="Anterior">&#8249;</button>
+          <button type="button" id="next" aria-label="Siguiente">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- REDES -->
+    <section class="wrap" id="redes">
+      <h2 class="titulo">seguí el evento en redes</h2>
+      <div class="centro">
+        <a class="btn btn-ig" href="https://www.instagram.com/_trazooculto?utm_source=ig_web_button_share_sheet&amp;mdxt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@_trazooculto</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <img src="img/manos.png" alt="Manos con pinceles, rodillo, aerosol y balde de pintura">
+    <p>Trazo Oculto. Arte a cielo abierto en Colegiales, del 14 al 17 de noviembre.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
